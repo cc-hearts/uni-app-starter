@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+    "lib": ["esnext", "dom"],
+    "types": ["@dcloudio/types"],
+  },
+  "vueCompilerOptions": {
+    "nativeTags": ["block", "template", "component", "slot"],
+  },
+  "include": ["src/**/*"],
+}
