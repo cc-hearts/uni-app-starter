@@ -56,8 +56,8 @@ dependencies:
 
 devDependencies:
   '@cc-heart/eslint-config':
-    specifier: ^2.0.0
-    version: 2.0.0(eslint@8.56.0)(typescript@5.3.3)
+    specifier: ^2.0.1
+    version: 2.0.1(eslint@8.56.0)(typescript@5.3.3)
   '@dcloudio/types':
     specifier: ^3.3.2
     version: 3.4.7
@@ -76,6 +76,9 @@ devDependencies:
   '@vue/runtime-core':
     specifier: ^3.2.45
     version: 3.4.15
+  eslint:
+    specifier: ^8.56.0
+    version: 8.56.0
   husky:
     specifier: ^9.0.7
     version: 9.0.7
@@ -1322,8 +1325,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@cc-heart/eslint-config@2.0.0(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-ZlwtLzxvB7F5HG1QR8Ci6I1gQe+HaqCwSP+xHFwiO93tV1kVREQ9oTGXAvqZ6r9XPUfYznOaH2vm2JlVoKwM3Q==}
+  /@cc-heart/eslint-config@2.0.1(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-nfAMCqQDNYVRkuX2mzIPA0ItC2XeKqaGkRz3GQBC8eBcEgd47w07tjFpjHlTVCx0bVsGvIfFAeeQspGRdYu1Zg==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
