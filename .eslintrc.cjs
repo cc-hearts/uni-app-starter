@@ -6,7 +6,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     ecmaVersion: 'laster',
   },
-  "rules":{
-    "vue/component-name-in-template-casing":"off"
+  rules:{
+
   }
 }
