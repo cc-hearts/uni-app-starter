@@ -11,10 +11,9 @@
       "@/*": ["./src/*"],
     },
     "lib": ["esnext", "dom"],
-    "types": ["@dcloudio/types"],
   },
   "vueCompilerOptions": {
     "nativeTags": ["block", "template", "component", "slot"],
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "shims-uni.d.ts"],
 }

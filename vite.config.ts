@@ -7,6 +7,11 @@ import UnoCSS from 'unocss/vite'
 export default defineConfig({
   base: './',
   plugins: [uni(), UnoCSS()],
+  define: {
+    'process.env': {
+      UNI_MODES: process.env.MODE_ENV || 'development',
+    },
+  },
   resolve: {
     alias: {
       '@': resolve('src'),
