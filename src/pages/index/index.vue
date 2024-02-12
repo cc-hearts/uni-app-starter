@@ -1,23 +1,11 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.svg"></image>
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
-    </view>
+    <image class="logo" src="/static/logo.svg" />
+    <view class="text-area" />
   </view>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      title: 'Hello',
-    }
-  },
-  onLoad() {},
-  methods: {},
-}
-</script>
+<script lang="ts" setup></script>
 
 <style>
 .content {

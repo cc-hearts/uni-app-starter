@@ -45,6 +45,7 @@
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union"
   },
   "dependencies": {
+    "@cc-heart/utils": "^5.1.1",
     "@dcloudio/uni-app": "3.0.0-3090920231225001",
     "@dcloudio/uni-app-plus": "3.0.0-3090920231225001",
     "@dcloudio/uni-components": "3.0.0-3090920231225001",
