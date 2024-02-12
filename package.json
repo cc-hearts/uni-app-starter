@@ -1,7 +1,7 @@
 {
   "name": "uni-app-starter",
   "version": "0.0.1",
-  "author": "carl chen",
+  "author": "Carl Chen",
   "description": "uni app template engine",
   "scripts": {
     "prepare": "husky",
