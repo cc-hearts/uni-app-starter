@@ -9,6 +9,7 @@ declare global {
   export const process = {
     env: {
       NODE_ENV: string,
+      UNI_MODES: string,
     },
   }
 }

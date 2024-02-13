@@ -2,35 +2,55 @@ import type { App } from 'vue'
 import { isFn } from '@cc-heart/utils'
 import { useCurrentInstance } from '@/hooks/use-current-instance'
 import type { RouterPluginOptions } from './helper'
+import type { fn } from '@cc-heart/utils/helper'
 
-const _router = new WeakSet()
 let curPagesInstance = null
 let isRedirectFlag = false
+const beforeGuardExecuteList: fn[] = []
 
+function invokeGuardExecuteList() {
+  if (beforeGuardExecuteList.length === 0) return
+  const fns = [...beforeGuardExecuteList]
+  beforeGuardExecuteList.length = 0
+  fns.forEach((fn) => fn())
+}
+
+function setCurPagesInstance() {
+  const currentInstance = useCurrentInstance()
+  if (currentInstance) {
+    curPagesInstance = currentInstance
+  }
+}
 const onLaunch = () => {
   uni.addInterceptor('navigateTo', {
     success: () => {
-      const currentInstance = useCurrentInstance()
-      if (currentInstance) {
-        _router.add(currentInstance)
-        curPagesInstance = currentInstance
-      }
+      setCurPagesInstance()
     },
   })
 
   uni.addInterceptor('redirectTo', {
     success: () => {
       isRedirectFlag = true
+      beforeGuardExecuteList.push(setCurPagesInstance)
+    },
+  })
+
+  uni.addInterceptor('navigateBack', {
+    success: () => {
+      setCurPagesInstance()
     },
   })
 }
 
-const _onShow = (options) => {
+const _onShow = async (options) => {
   curPagesInstance = curPagesInstance || getCurrentPages().shift()
   if (isFn(options?.guard)) {
     const currentInstance = useCurrentInstance()
     const [prevInstance = null] = isRedirectFlag ? [curPagesInstance] : getCurrentPages().slice(-2, -1)
-    if (curPagesInstance) options.guard(prevInstance, currentInstance)
+    invokeGuardExecuteList()
+    if (curPagesInstance) await Promise.resolve(options.guard(prevInstance, currentInstance))
+
+    if (isRedirectFlag) isRedirectFlag = false
   }
 }
 
