@@ -72,6 +72,7 @@
     "@dcloudio/uni-cli-shared": "3.0.0-3090920231225001",
     "@dcloudio/uni-stacktracey": "3.0.0-3090920231225001",
     "@dcloudio/vite-plugin-uni": "3.0.0-3090920231225001",
+    "@uni-helper/vite-plugin-uni-pages": "^0.2.14",
     "@vue/runtime-core": "^3.2.45",
     "eslint": "^8.56.0",
     "husky": "^9.0.7",
