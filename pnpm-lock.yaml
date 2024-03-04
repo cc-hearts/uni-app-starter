@@ -8,6 +8,9 @@ dependencies:
   '@cc-heart/utils':
     specifier: ^5.1.1
     version: 5.1.1
+  '@cc-heart/utils-client':
+    specifier: ^2.0.1
+    version: 2.0.1
   '@dcloudio/uni-app':
     specifier: 3.0.0-3090920231225001
     version: 3.0.0-3090920231225001(@dcloudio/types@3.4.7)(postcss@8.4.33)(vue@3.4.15)
@@ -1394,6 +1397,10 @@ packages:
       - supports-color
       - typescript
     dev: true
+
+  /@cc-heart/utils-client@2.0.1:
+    resolution: {integrity: sha512-mcsMXMEAxHPhrwLChhoaDfq64aNZGJ9URoaF/Sx6adv5SxgzwlpcQ0iw2Y8ScjZxalAl/20f9wD4b73G0qPoMg==}
+    dev: false
 
   /@cc-heart/utils@5.1.1:
     resolution: {integrity: sha512-GXUABZe+LfB6PbUDEiyGZS7+xdx1O1RkaNsNoDUkeA4F1yrtYTYKtzP7IUaLsN8v39Lg5TWQHtiM/o/1zEm3dA==}

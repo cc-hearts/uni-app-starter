@@ -1,0 +1,5 @@
+@use '@/asserts/scss/variables/variable.scss' as *;
+
+:root {
+  --#{namespace}-base-background-color: #fff;
+}
