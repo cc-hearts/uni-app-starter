@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@cc-heart/utils": "^5.1.1",
-    "@cc-heart/utils-client": "^2.0.1",
+    "@cc-heart/utils-client": "^2.0.2",
     "@dcloudio/uni-app": "3.0.0-3090920231225001",
     "@dcloudio/uni-app-plus": "3.0.0-3090920231225001",
     "@dcloudio/uni-components": "3.0.0-3090920231225001",
@@ -63,8 +63,8 @@
     "@dcloudio/uni-quickapp-webview": "3.0.0-3090920231225001",
     "cross-env": "^7.0.3",
     "eslint-plugin-vue": "^9.21.1",
-    "vue": "^3.2.45",
-    "vue-i18n": "^9.1.9"
+    "vue": "^3.4.15",
+    "vue-i18n": "^9.9.0"
   },
   "devDependencies": {
     "@cc-heart/eslint-config": "^2.0.1",
@@ -74,11 +74,12 @@
     "@dcloudio/uni-stacktracey": "3.0.0-3090920231225001",
     "@dcloudio/vite-plugin-uni": "3.0.0-3090920231225001",
     "@uni-helper/vite-plugin-uni-pages": "^0.2.14",
-    "@vue/runtime-core": "^3.2.45",
+    "@vue/runtime-core": "^3.4.15",
     "eslint": "^8.56.0",
     "husky": "^9.0.7",
     "lint-staged": "^15.2.0",
     "prettier": "^3.2.4",
+    "sass": "^1.72.0",
     "typescript": "^5.3.3",
     "unocss": "^0.58.4",
     "vite": "^5.0.12"

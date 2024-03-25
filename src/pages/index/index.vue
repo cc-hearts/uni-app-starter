@@ -1,13 +1,12 @@
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.svg" />
-    <view class="text-area" />
   </view>
 </template>
 
 <script lang="ts" setup></script>
 
-<style>
+<style lang="scss">
 .content {
   display: flex;
   flex-direction: column;
@@ -22,15 +21,5 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50rpx;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
 }
 </style>
