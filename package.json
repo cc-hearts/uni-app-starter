@@ -63,6 +63,7 @@
     "@dcloudio/uni-quickapp-webview": "3.0.0-3090920231225001",
     "cross-env": "^7.0.3",
     "eslint-plugin-vue": "^9.21.1",
+    "unocss-preset-weapp": "^0.58.7",
     "vue": "^3.4.15",
     "vue-i18n": "^9.9.0"
   },
