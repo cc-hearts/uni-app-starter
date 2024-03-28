@@ -1,6 +1,7 @@
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.svg" />
+    <div class="color-red text-2.5">123</div>
   </view>
 </template>
 

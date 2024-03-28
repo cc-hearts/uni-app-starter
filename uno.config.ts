@@ -1,25 +1,37 @@
-// @ts-nocheck
-
 // uno.config.ts
-import { defineConfig } from 'unocss'
+import { defineConfig, presetAttributify, presetUno } from 'unocss'
 import presetWeapp from 'unocss-preset-weapp'
 import { extractorAttributify, transformerClass } from 'unocss-preset-weapp/transformer'
-
 const { presetWeappAttributify, transformerAttributify } = extractorAttributify()
 
-export default defineConfig({
+let config = {
   presets: [
-    presetWeappAttributify(),
-    presetWeapp({
-      isH5: true,
-      platform: 'uniapp',
+    presetAttributify({
+      /* preset options */
     }),
+    presetUno(),
     // ...custom presets
   ],
-  transformers: [
-    // https://github.com/MellowCo/unocss-preset-weapp/tree/main/src/transformer/transformerAttributify
-    transformerAttributify(),
-    // https://github.com/MellowCo/unocss-preset-weapp/tree/main/src/transformer/transformerClass
-    transformerClass(),
-  ],
-})
+}
+const argv = process.argv
+if (argv.includes('mp-weixin')) {
+  config = {
+    presets: [
+      // @ts-ignore
+      presetWeappAttributify(),
+      // @ts-ignore
+      presetWeapp({
+        isH5: true,
+        platform: 'uniapp',
+      }),
+      // ...custom presets
+    ],
+    transformers: [
+      // https://github.com/MellowCo/unocss-preset-weapp/tree/main/src/transformer/transformerAttributify
+      transformerAttributify(),
+      // https://github.com/MellowCo/unocss-preset-weapp/tree/main/src/transformer/transformerClass
+      transformerClass(),
+    ],
+  }
+}
+export default defineConfig(config)
