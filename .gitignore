@@ -20,3 +20,4 @@ dist
 *.sln
 *.sw?
 .vscode/launch.json
+uni-pages.d.ts
