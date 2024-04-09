@@ -85,6 +85,9 @@ devDependencies:
   '@dcloudio/uni-stacktracey':
     specifier: 3.0.0-3090920231225001
     version: 3.0.0-3090920231225001
+  '@dcloudio/uni-ui':
+    specifier: ^1.5.5
+    version: 1.5.5
   '@dcloudio/vite-plugin-uni':
     specifier: 3.0.0-3090920231225001
     version: 3.0.0-3090920231225001(postcss@8.4.38)(vite@5.0.12)(vue@3.4.15)
@@ -2192,6 +2195,10 @@ packages:
       - ts-node
       - vue
     dev: false
+
+  /@dcloudio/uni-ui@1.5.5:
+    resolution: {integrity: sha512-DTr8o4lcRgu4JJclA2eT7UFVKtglK63OUtcDGysrSeZhgAJAC2gBYm/pYbv0BFxKqxfbdoAFGAFCigCVY9+NAQ==}
+    dev: true
 
   /@dcloudio/vite-plugin-uni@3.0.0-3090920231225001(postcss@8.4.38)(vite@5.0.12)(vue@3.4.15):
     resolution: {integrity: sha512-kV/J7yl5ojsd1NZZ1eMziRDrz+MPbjDMm6rWG3fyW1u8Kzj06jUzzi7HRlkaWiPJHAmeRWGDf/6RFoSd+8fYCg==}
