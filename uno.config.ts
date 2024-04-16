@@ -21,7 +21,7 @@ if (argv.includes('mp-weixin')) {
       presetWeappAttributify(),
       // @ts-ignore
       presetWeapp({
-        isH5: true,
+        isH5: false,
         platform: 'uniapp',
       }),
       // ...custom presets
