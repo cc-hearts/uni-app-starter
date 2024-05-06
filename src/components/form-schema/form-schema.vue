@@ -15,7 +15,6 @@
             <text class="color-#666666">
               {{ item.label }}
             </text>
-            <!-- <text v-if="item.required" class="text-2.5 bg-#E8F8FF p-x-1 color-#008DFF m-l-1"> 必填项 </text> -->
           </view>
         </template>
 
