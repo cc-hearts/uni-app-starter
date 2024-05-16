@@ -7,6 +7,7 @@ module.exports = {
   },
   rules: {
     'vue/multi-word-component-names': 'off',
-    '@typescript-eslint/ban-ts-comment': 'off'
+    '@typescript-eslint/ban-ts-comment': 'off',
+    'vue/attribute-hyphenation': 'off',
   },
 }
