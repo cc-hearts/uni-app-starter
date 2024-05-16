@@ -21,3 +21,4 @@ dist
 *.sw?
 .vscode/launch.json
 uni-pages.d.ts
+auto-imports.d.ts
