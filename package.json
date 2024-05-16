@@ -85,6 +85,7 @@
     "sass": "^1.72.0",
     "typescript": "^5.3.3",
     "unocss": "^0.58.4",
+    "unplugin-auto-import": "^0.17.6",
     "vite": "^5.0.12"
   },
   "lint-staged": {
