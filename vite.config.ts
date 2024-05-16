@@ -14,6 +14,11 @@ export default defineConfig({
     UniPages(),
     AutoImport({
       imports: ['vue'],
+      eslintrc: {
+        enabled: true,
+        filepath: './.eslintrc-auto-import.json',
+        globalsPropValue: true,
+      },
     }),
   ],
   define: {
