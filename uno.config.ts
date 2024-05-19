@@ -1,7 +1,8 @@
 // uno.config.ts
 import { defineConfig, presetAttributify, presetUno } from 'unocss'
 import presetWeapp from 'unocss-preset-weapp'
-import { extractorAttributify, transformerClass } from 'unocss-preset-weapp/transformer'
+import { extractorAttributify, transformerClass, defaultRules } from 'unocss-preset-weapp/transformer'
+
 const { presetWeappAttributify, transformerAttributify } = extractorAttributify()
 
 let config = {
@@ -14,7 +15,12 @@ let config = {
   ],
 }
 const argv = process.argv
+
 if (argv.includes('mp-weixin')) {
+  const transformRules = {
+    ...defaultRules,
+  }
+
   config = {
     presets: [
       // @ts-ignore
@@ -23,6 +29,8 @@ if (argv.includes('mp-weixin')) {
       presetWeapp({
         isH5: false,
         platform: 'uniapp',
+        whRpx: false,
+        transformRules,
       }),
       // ...custom presets
     ],
@@ -30,7 +38,7 @@ if (argv.includes('mp-weixin')) {
       // https://github.com/MellowCo/unocss-preset-weapp/tree/main/src/transformer/transformerAttributify
       transformerAttributify(),
       // https://github.com/MellowCo/unocss-preset-weapp/tree/main/src/transformer/transformerClass
-      transformerClass(),
+      transformerClass({ transformRules }),
     ],
   }
 }
