@@ -1,9 +1,9 @@
-import type { fn } from '@cc-heart/utils/helper'
+import type { Fn } from '@cc-heart/utils/helper'
 
 interface RouterCallback {
-  success: fn
-  fail: fn
-  complete: fn
+  success: Fn
+  fail: Fn
+  complete: Fn
 }
 
 export function useRouter() {

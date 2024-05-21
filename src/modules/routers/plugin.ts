@@ -2,11 +2,11 @@ import type { App } from 'vue'
 import { isFn } from '@cc-heart/utils'
 import { useCurrentInstance } from '@/hooks/use-current-instance'
 import type { RouterPluginOptions } from './helper'
-import type { fn } from '@cc-heart/utils/helper'
+import type { Fn } from '@cc-heart/utils/helper'
 
 let curPagesInstance = null
 let isRedirectFlag = false
-const beforeGuardExecuteList: fn[] = []
+const beforeGuardExecuteList: Fn[] = []
 
 function invokeGuardExecuteList() {
   if (beforeGuardExecuteList.length === 0) return
