@@ -21,6 +21,13 @@ export default defineConfig({
       },
     }),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: "@use '@/assets/scss/lib.scss' as *;\n",
+      },
+    },
+  },
   define: {
     'process.env': {
       UNI_MODES: process.env.MODE_ENV || 'development',
