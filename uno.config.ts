@@ -5,6 +5,10 @@ import { extractorAttributify, transformerClass, defaultRules } from 'unocss-pre
 
 const { presetWeappAttributify, transformerAttributify } = extractorAttributify()
 
+/**
+ * 目前插件的动态类名支持 :class="[1 === 1 ? "m-b-2.5" : "m-p-2"]" 以及 :class="{"m-b-2.5": true}" 这两种写法
+ * 直接使用 :class"'m-b-3.6'" 不会生效
+ */
 let config = {
   presets: [
     presetAttributify({
