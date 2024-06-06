@@ -22,3 +22,4 @@ dist
 .vscode/launch.json
 uni-pages.d.ts
 auto-imports.d.ts
+.eslintrc-auto-import.json
