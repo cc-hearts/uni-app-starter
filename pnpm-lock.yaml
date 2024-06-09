@@ -77,8 +77,8 @@ devDependencies:
     specifier: ^3.4.7
     version: 3.4.8
   '@dcloudio/uni-automator':
-    specifier: 3.0.0-3090920231225001
-    version: 3.0.0-3090920231225001(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.38)(vue@3.4.15)
+    specifier: 3.0.0-alpha-4010920240606001
+    version: 3.0.0-alpha-4010920240606001(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.38)(vue@3.4.15)
   '@dcloudio/uni-cli-shared':
     specifier: 3.0.0-alpha-4010920240606001
     version: 3.0.0-alpha-4010920240606001(postcss@8.4.38)(vue@3.4.15)
@@ -244,7 +244,7 @@ packages:
       '@babel/traverse': 7.23.9
       '@babel/types': 7.23.9
       convert-source-map: 2.0.0
-      debug: 4.3.4
+      debug: 4.3.5
       gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
@@ -1781,7 +1781,7 @@ packages:
       '@vue/compiler-core': 3.2.47
       '@vue/compiler-sfc': 3.2.47
       '@vue/shared': 3.2.47
-      debug: 4.3.4
+      debug: 4.3.5
       es-module-lexer: 1.4.1
       estree-walker: 2.0.2
       fs-extra: 10.1.0
@@ -1809,7 +1809,7 @@ packages:
       '@vitejs/plugin-vue': 4.6.2(vite@5.0.12)(vue@3.4.15)
       '@vue/compiler-dom': 3.2.47
       '@vue/compiler-sfc': 3.2.47
-      debug: 4.3.4
+      debug: 4.3.5
       fs-extra: 10.1.0
       picocolors: 1.0.0
     transitivePeerDependencies:
@@ -1844,16 +1844,16 @@ packages:
       - vue
     dev: false
 
-  /@dcloudio/uni-automator@3.0.0-3090920231225001(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.38)(vue@3.4.15):
-    resolution: {integrity: sha512-6PKcEJK6VAARpEtsFUypFEu6DeAminijHJb63x6oK1lIt0VlJFGjXuCTBbFQTf6uLFSsUGMV4wcCmh2NswXxmg==}
+  /@dcloudio/uni-automator@3.0.0-alpha-4010920240606001(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.38)(vue@3.4.15):
+    resolution: {integrity: sha512-pfl9oX+XTnDt5PJElELdxX9Cj58UNbRwkhBJxG/70KzE9jVoAQ+3vqJzMs5r8bquPK00RbRkJgmn3E8KRQ/gUQ==}
     peerDependencies:
       jest: 27.0.4
       jest-environment-node: 27.5.1
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-3090920231225001(postcss@8.4.38)(vue@3.4.15)
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4010920240606001(postcss@8.4.38)(vue@3.4.15)
       address: 1.2.2
       cross-env: 7.0.3
-      debug: 4.3.4
+      debug: 4.3.5
       default-gateway: 6.0.3
       fs-extra: 10.1.0
       jest: 27.0.4
@@ -1865,8 +1865,11 @@ packages:
       qrcode-terminal: 0.12.0
       ws: 8.16.0
     transitivePeerDependencies:
+      - '@nuxt/kit'
+      - '@vueuse/core'
       - bufferutil
       - postcss
+      - rollup
       - supports-color
       - ts-node
       - utf-8-validate
@@ -1896,7 +1899,7 @@ packages:
       base64url: 3.0.1
       chokidar: 3.5.3
       compare-versions: 3.6.0
-      debug: 4.3.4
+      debug: 4.3.5
       es-module-lexer: 1.4.1
       esbuild: 0.17.19
       estree-walker: 2.0.2
@@ -2022,7 +2025,7 @@ packages:
       '@vue/compiler-sfc': 3.2.47
       '@vue/server-renderer': 3.2.47(vue@3.4.15)
       '@vue/shared': 3.2.47
-      debug: 4.3.4
+      debug: 4.3.5
       fs-extra: 10.1.0
       mime: 3.0.0
       module-alias: 2.2.3
@@ -2228,7 +2231,7 @@ packages:
       '@dcloudio/uni-shared': 3.0.0-3090920231225001
       '@vue/compiler-sfc': 3.2.47
       '@vue/shared': 3.2.47
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - postcss
       - supports-color
@@ -2335,7 +2338,7 @@ packages:
     dependencies:
       '@dcloudio/uni-cli-shared': 3.0.0-3090920231225001(postcss@8.4.38)(vue@3.4.15)
       '@dcloudio/uni-shared': 3.0.0-3090920231225001
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - postcss
       - supports-color
@@ -2989,7 +2992,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.4
+      debug: 4.3.5
       espree: 9.6.1
       globals: 13.24.0
       ignore: 5.3.0
@@ -3009,7 +3012,7 @@ packages:
     engines: {node: '>=10.10.0'}
     dependencies:
       '@humanwhocodes/object-schema': 2.0.2
-      debug: 4.3.4
+      debug: 4.3.5
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -6072,7 +6075,7 @@ packages:
     peerDependencies:
       eslint: ^7.2.0 || ^8
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.5
       doctrine: 3.0.0
       eslint: 8.56.0
       eslint-import-resolver-node: 0.3.9
@@ -6097,7 +6100,7 @@ packages:
       '@es-joy/jsdoccomment': 0.41.0
       are-docs-informative: 0.0.2
       comment-parser: 1.4.1
-      debug: 4.3.4
+      debug: 4.3.5
       escape-string-regexp: 4.0.0
       eslint: 8.56.0
       esquery: 1.5.0
@@ -6267,7 +6270,7 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.5
       eslint: 8.56.0
       eslint-compat-utils: 0.4.1(eslint@8.56.0)
       lodash: 4.17.21
@@ -8111,7 +8114,7 @@ packages:
   /micromark@2.11.4:
     resolution: {integrity: sha512-+WoovN/ppKolQOFIAajxi7Lu9kInbPxFuTBVEavFcL8eAfVstoc5MocPmqBeAdBOJV00uaVjegzH4+MA0DN/uA==}
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.5
       parse-entities: 2.0.0
     transitivePeerDependencies:
       - supports-color
@@ -9944,7 +9947,7 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.5
       eslint: 8.56.0
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
@@ -10024,9 +10027,6 @@ packages:
   /webpack-sources@3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
-
-  /webpack-virtual-modules@0.6.1:
-    resolution: {integrity: sha512-poXpCylU7ExuvZK8z+On3kX+S8o/2dQ/SVYueKA0D4WEMXROXgY8Ez50/bQEUmvoSMMrWcrJqCHuhAbsiwg7Dg==}
 
   /webpack-virtual-modules@0.6.2:
     resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
