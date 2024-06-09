@@ -83,8 +83,8 @@ devDependencies:
     specifier: 3.0.0-alpha-4010920240606001
     version: 3.0.0-alpha-4010920240606001(postcss@8.4.38)(vue@3.4.15)
   '@dcloudio/uni-stacktracey':
-    specifier: 3.0.0-3090920231225001
-    version: 3.0.0-3090920231225001
+    specifier: 3.0.0-alpha-4010920240606001
+    version: 3.0.0-alpha-4010920240606001
   '@dcloudio/uni-ui':
     specifier: ^1.5.5
     version: 1.5.5
@@ -2326,8 +2326,8 @@ packages:
       '@vue/shared': 3.4.21
     dev: true
 
-  /@dcloudio/uni-stacktracey@3.0.0-3090920231225001:
-    resolution: {integrity: sha512-UN0qPDt6uTo2M9HxD4WgJHJIrCWLpUkseBOoOseZ2QVqfFCTQvLcH3ZVr7fx4gkoc5FDCp1YI2uiiS2AnjqZtA==}
+  /@dcloudio/uni-stacktracey@3.0.0-alpha-4010920240606001:
+    resolution: {integrity: sha512-7qxCcLKRQ2ZfDn833DYc5LioibJL69SaCIheh47MS4ABfwv2YRdGi05PuOhaFDhiCwQ5NyIKbshqy4ma5srjOQ==}
     dev: true
 
   /@dcloudio/uni-stat@3.0.0-3090920231225001(postcss@8.4.38)(vue@3.4.15):
@@ -10024,9 +10024,6 @@ packages:
   /webpack-sources@3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
-
-  /webpack-virtual-modules@0.6.1:
-    resolution: {integrity: sha512-poXpCylU7ExuvZK8z+On3kX+S8o/2dQ/SVYueKA0D4WEMXROXgY8Ez50/bQEUmvoSMMrWcrJqCHuhAbsiwg7Dg==}
 
   /webpack-virtual-modules@0.6.2:
     resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
