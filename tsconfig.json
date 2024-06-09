@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "composite": true,
+    "target": "ESNext",
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
@@ -15,5 +15,5 @@
   "vueCompilerOptions": {
     "nativeTags": ["block", "template", "component", "slot"],
   },
-  "include": ["src/**/*", "shims-uni.d.ts", "auto-imports.d.ts"],
+  "include": ["src/**/*", "shims-uni.d.ts", "global.d.ts"],
 }
