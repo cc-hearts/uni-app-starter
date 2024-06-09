@@ -1,59 +1,53 @@
-import { type Fn } from '@cc-heart/utils/helper'
-import { pipe, isPromise } from '@cc-heart/utils'
-import { basePrefix, baseUrl } from '@/configs'
-type methodType = 'get' | 'post' | 'delete' | 'put'
+import type { RequestOptions } from './request-core'
+import { request, requestInterception, responseInterception } from './request-core'
+import { SUCCESS_CODE } from '@/configs/index'
+responseInterception(([target]) => {
+  const { data } = target
+  if ([SUCCESS_CODE].includes(data.code)) {
+    // TODO: handle data
+    return data
+  }
 
-export interface RequestOptions {
-  header?: Record<string, string>
-}
+  // error
+  return Promise.reject(data)
+})
 
-const responseInterceptionCollect: Fn[] = []
-const requestInterceptionCollect: Fn[] = []
+requestInterception((options) => {
+  const header = Reflect.get(options, 'header')
+  if (header) {
+    // TODO: add authorization
+  }
 
-export const responseInterception = (callback: Fn) => {
-  responseInterceptionCollect.push(callback)
-}
-
-export const requestInterception = (callback: Fn) => {
-  requestInterceptionCollect.push(callback)
-}
-
-export const request = async (
+  return options
+})
+export function Get<Res, T extends Record<string, unknown> = NonNullable<unknown>>(
   url: string,
-  method: methodType,
-  data: Record<string, unknown>,
-  options: RequestOptions = { header: {} },
-) => {
-  const originMethod = method.toUpperCase() as Uppercase<methodType>
-  const newHeader = { ...options.header }
-  url = /^http/.test(url) ? url : baseUrl + basePrefix + url
-  let requestOptions = {
-    method: originMethod,
-    url,
-    data,
-    header: newHeader,
-  }
+  data?: T,
+  options?: RequestOptions,
+) {
+  return request(url, 'get', data, options) as Promise<Res>
+}
 
-  const fns = requestInterceptionCollect.slice()
-  const tasks = pipe(...fns)
-  requestOptions = tasks(requestOptions) || requestOptions
+export function Post<Res, T extends Record<string, unknown> = NonNullable<unknown>>(
+  url: string,
+  data?: T,
+  options?: RequestOptions,
+) {
+  return request(url, 'post', data, options) as Promise<Res>
+}
 
-  if (isPromise(requestOptions)) {
-    requestOptions = (await requestOptions) as typeof requestOptions
-  }
+export function Put<Res, T extends Record<string, unknown> = NonNullable<unknown>>(
+  url: string,
+  data?: T,
+  options?: RequestOptions,
+) {
+  return request(url, 'put', data, options) as Promise<Res>
+}
 
-  return new Promise((resolve, reject) => {
-    uni.request({
-      ...requestOptions,
-      success(result) {
-        const fns = responseInterceptionCollect.slice()
-        const tasks = pipe(...fns)
-        const responseOptions = { requestUrl: requestOptions.url, refreshParams: { url, method, data, options } }
-        Promise.resolve(tasks([result, responseOptions]))
-          .then(resolve)
-          .catch(reject)
-      },
-      fail: reject,
-    })
-  })
+export function Delete<Res, T extends Record<string, unknown> = NonNullable<unknown>>(
+  url: string,
+  data?: T,
+  options?: RequestOptions,
+) {
+  return request(url, 'delete', data, options) as Promise<Res>
 }
