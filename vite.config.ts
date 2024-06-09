@@ -4,6 +4,7 @@ import uni from '@dcloudio/vite-plugin-uni'
 import UnoCSS from 'unocss/vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import AutoImport from 'unplugin-auto-import/vite'
+import uniPagesToEnum from '@cc-heart/vite-plugin-uni-pages-to-enum'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,6 +20,12 @@ export default defineConfig({
         filepath: './.eslintrc-auto-import.json',
         globalsPropValue: true,
       },
+    }),
+    uniPagesToEnum({
+      input: 'src/pages.json',
+      output: 'src/pages-router.ts',
+      isConstEnum: true,
+      enumName: 'PAGES',
     }),
   ],
   css: {
