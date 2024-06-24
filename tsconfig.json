@@ -8,12 +8,22 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["./src/*"]
     },
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext", "dom"]
   },
   "vueCompilerOptions": {
-    "nativeTags": ["block", "template", "component", "slot"],
+    "nativeTags": ["block", "template", "component", "slot"]
   },
-  "include": ["src/**/*", "shims-uni.d.ts", "global.d.ts"],
+  "include": [
+    "src/**/*.ts",
+    "shims-uni.d.ts",
+    "global.d.ts",
+    "auto-imports.d.ts",
+    "page.config.ts",
+    "vite.config.ts",
+    "uno.config.ts",
+    "uni-pages.d.ts",
+    "src/**/*.vue"
+  ]
 }

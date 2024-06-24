@@ -27,9 +27,9 @@ if (argv.includes('mp-weixin')) {
 
   config = {
     presets: [
-      // @ts-ignore
+      // @ts-expect-error: no
       presetWeappAttributify(),
-      // @ts-ignore
+      // @ts-expect-error: no
       presetWeapp({
         isH5: false,
         platform: 'uniapp',

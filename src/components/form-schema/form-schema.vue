@@ -1,36 +1,3 @@
-<template>
-  <view :class="ns.cls">
-    <uni-forms ref="uniFormsRef" :model-value="formData">
-      <uni-forms-item
-        v-for="item in props.schema"
-        :key="item.field"
-        :type="item.type"
-        :name="item.field"
-        :class="[item.labelPosition === 'top' ? ns.e('label-position') : '']"
-        :label="item.label"
-        :required="item.required"
-      >
-        <template #label>
-          <view class="flex items-center">
-            <text class="color-#666666">
-              {{ item.label }}
-            </text>
-          </view>
-        </template>
-
-        <slot v-if="item.slot" name="custom" :form-data="formData" :item="item" :slot-name="item.slot.name" />
-
-        <uni-easyinput
-          v-else-if="item.type === 'input'"
-          v-model="formData[item.field]"
-          :disabled="item.disabled"
-          v-bind="item.extraProperty || {}"
-        />
-      </uni-forms-item>
-    </uni-forms>
-  </view>
-</template>
-
 <script setup lang="ts">
 import { defineCssNamespace } from '@/utils/define-css-namespace'
 import { isFn, isNull, isUndef } from '@cc-heart/utils'
@@ -117,6 +84,39 @@ defineExpose({
   getFieldsValue,
 })
 </script>
+
+<template>
+  <view :class="ns.cls">
+    <uni-forms ref="uniFormsRef" :model-value="formData">
+      <uni-forms-item
+        v-for="item in props.schema"
+        :key="item.field"
+        :type="item.type"
+        :name="item.field"
+        :class="[item.labelPosition === 'top' ? ns.e('label-position') : '']"
+        :label="item.label"
+        :required="item.required"
+      >
+        <template #label>
+          <view class="flex items-center">
+            <text class="color-#666666">
+              {{ item.label }}
+            </text>
+          </view>
+        </template>
+
+        <slot v-if="item.slot" name="custom" :form-data="formData" :item="item" :slot-name="item.slot.name" />
+
+        <uni-easyinput
+          v-else-if="item.type === 'input'"
+          v-model="formData[item.field]"
+          :disabled="item.disabled"
+          v-bind="item.extraProperty || {}"
+        />
+      </uni-forms-item>
+    </uni-forms>
+  </view>
+</template>
 
 <style lang="scss">
 @use '@/assets/scss/lib.scss' as *;

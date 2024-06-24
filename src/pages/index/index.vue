@@ -1,8 +1,8 @@
+<script lang="ts" setup></script>
+
 <template>
   <view class="content"> uni app starter </view>
 </template>
-
-<script lang="ts" setup></script>
 
 <style lang="scss">
 .content {

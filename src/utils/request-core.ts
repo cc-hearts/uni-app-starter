@@ -1,4 +1,4 @@
-import { type Fn } from '@cc-heart/utils/helper'
+import type { Fn } from '@cc-heart/utils/helper'
 import { pipe, isPromise } from '@cc-heart/utils'
 import { basePrefix, baseUrl } from '@/configs'
 type methodType = 'get' | 'post' | 'delete' | 'put'

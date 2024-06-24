@@ -64,11 +64,11 @@
     "cross-env": "^7.0.3",
     "eslint-plugin-vue": "^9.26.0",
     "unocss-preset-weapp": "^0.60.1",
-    "vue": "^3.4.27",
+    "vue": "^3.4.30",
     "vue-i18n": "^9.13.1"
   },
   "devDependencies": {
-    "@cc-heart/eslint-config": "^2.0.2",
+    "@cc-heart/eslint-config": "^3.0.4",
     "@cc-heart/vite-plugin-uni-pages-to-enum": "^0.0.2",
     "@dcloudio/types": "^3.4.8",
     "@dcloudio/uni-automator": "3.0.0-alpha-4010920240606001",
@@ -76,18 +76,19 @@
     "@dcloudio/uni-stacktracey": "3.0.0-alpha-4010920240606001",
     "@dcloudio/uni-ui": "^1.5.5",
     "@dcloudio/vite-plugin-uni": "3.0.0-alpha-4010920240606001",
-    "@types/node": "^20.14.2",
+    "@types/node": "^20.14.8",
     "@uni-helper/vite-plugin-uni-pages": "^0.2.23",
-    "@vue/runtime-core": "^3.4.27",
-    "eslint": "^8.57.0",
+    "@vue/runtime-core": "^3.4.30",
+    "eslint": "^9.5.0",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.5",
-    "prettier": "^3.3.1",
-    "sass": "^1.77.4",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.2",
+    "sass": "^1.77.6",
+    "taze": "^0.13.8",
     "typescript": "^5.4.5",
     "unocss": "^0.58.9",
     "unplugin-auto-import": "^0.17.6",
-    "vite": "^5.2.13"
+    "vite": "^5.3.1"
   },
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,json}": [
