@@ -48,7 +48,7 @@
     "@cc-heart/utils": "^5.2.0",
     "@cc-heart/utils-client": "^2.0.2",
     "@dcloudio/uni-app": "3.0.0-alpha-4020220240624001",
-    "@dcloudio/uni-app-plus": "3.0.0-3090920231225001",
+    "@dcloudio/uni-app-plus": "3.0.0-alpha-4020220240624001",
     "@dcloudio/uni-components": "3.0.0-3090920231225001",
     "@dcloudio/uni-h5": "3.0.0-3090920231225001",
     "@dcloudio/uni-mp-alipay": "3.0.0-3090920231225001",
