@@ -86,8 +86,8 @@ devDependencies:
     specifier: 3.0.0-alpha-4020220240624001
     version: 3.0.0-alpha-4020220240624001(postcss@8.4.38)(vue@3.4.30)
   '@dcloudio/uni-stacktracey':
-    specifier: 3.0.0-alpha-4010920240606001
-    version: 3.0.0-alpha-4010920240606001
+    specifier: 3.0.0-alpha-4020220240624001
+    version: 3.0.0-alpha-4020220240624001
   '@dcloudio/uni-ui':
     specifier: ^1.5.5
     version: 1.5.5
@@ -2274,8 +2274,8 @@ packages:
     dependencies:
       '@vue/shared': 3.4.21
 
-  /@dcloudio/uni-stacktracey@3.0.0-alpha-4010920240606001:
-    resolution: {integrity: sha512-7qxCcLKRQ2ZfDn833DYc5LioibJL69SaCIheh47MS4ABfwv2YRdGi05PuOhaFDhiCwQ5NyIKbshqy4ma5srjOQ==}
+  /@dcloudio/uni-stacktracey@3.0.0-alpha-4020220240624001:
+    resolution: {integrity: sha512-h9KV/fReQCYqGj5cPbDj+tPLZ2RXszb6LdCicZGR7Y0UYFrRZ8bqMWX7MXPWqpVovXbbATjKgquFvwbcQB6q7w==}
     dev: true
 
   /@dcloudio/uni-stat@3.0.0-alpha-4020220240624001(postcss@8.4.38)(vue@3.4.30):
