@@ -88,7 +88,7 @@
     "sass": "^1.77.6",
     "taze": "^0.13.8",
     "typescript": "^5.4.5",
-    "unocss": "^0.58.9",
+    "unocss": "^0.61.0",
     "unplugin-auto-import": "^0.17.6",
     "vite": "^5.3.1"
   },
