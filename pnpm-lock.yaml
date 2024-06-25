@@ -21,8 +21,8 @@ dependencies:
     specifier: 3.0.0-alpha-3000020210521001
     version: 3.0.0-alpha-3000020210521001
   '@dcloudio/uni-h5':
-    specifier: 3.0.0-3090920231225001
-    version: 3.0.0-3090920231225001(postcss@8.4.38)(vue@3.4.30)
+    specifier: 3.0.0-alpha-4020220240624001
+    version: 3.0.0-alpha-4020220240624001(postcss@8.4.38)(vue@3.4.30)
   '@dcloudio/uni-mp-alipay':
     specifier: 3.0.0-3090920231225001
     version: 3.0.0-3090920231225001(postcss@8.4.38)(vue@3.4.30)
