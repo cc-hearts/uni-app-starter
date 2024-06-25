@@ -92,8 +92,8 @@ devDependencies:
     specifier: ^1.5.5
     version: 1.5.5
   '@dcloudio/vite-plugin-uni':
-    specifier: 3.0.0-alpha-4010920240606001
-    version: 3.0.0-alpha-4010920240606001(postcss@8.4.38)(vite@5.3.1)(vue@3.4.30)
+    specifier: 3.0.0-alpha-4020220240624001
+    version: 3.0.0-alpha-4020220240624001(postcss@8.4.38)(vite@5.3.1)(vue@3.4.30)
   '@types/node':
     specifier: ^20.14.8
     version: 20.14.8
@@ -2298,8 +2298,8 @@ packages:
     resolution: {integrity: sha512-DTr8o4lcRgu4JJclA2eT7UFVKtglK63OUtcDGysrSeZhgAJAC2gBYm/pYbv0BFxKqxfbdoAFGAFCigCVY9+NAQ==}
     dev: true
 
-  /@dcloudio/vite-plugin-uni@3.0.0-alpha-4010920240606001(postcss@8.4.38)(vite@5.3.1)(vue@3.4.30):
-    resolution: {integrity: sha512-WtYMjBaZjW2PPclSc+AMJiyYAsjb9mYbQqf5RwVxlneBj/He00VoiQW6hlIzHlZNyD0osE67SwWP5xkoa3kSoA==}
+  /@dcloudio/vite-plugin-uni@3.0.0-alpha-4020220240624001(postcss@8.4.38)(vite@5.3.1)(vue@3.4.30):
+    resolution: {integrity: sha512-iCqJouVqfRa5BwOTp+vafxW+MRz0/v7CdocsyuNXTo084Iwm0pIaLILTWXjbAqllSlClkvCIEfeV6jdQShQlXg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -2308,8 +2308,8 @@ packages:
       '@babel/core': 7.24.7
       '@babel/plugin-syntax-import-meta': 7.10.4(@babel/core@7.24.7)
       '@babel/plugin-transform-typescript': 7.24.7(@babel/core@7.24.7)
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4010920240606001(postcss@8.4.38)(vue@3.4.30)
-      '@dcloudio/uni-shared': 3.0.0-alpha-4010920240606001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-4020220240624001(postcss@8.4.38)(vue@3.4.30)
+      '@dcloudio/uni-shared': 3.0.0-alpha-4020220240624001
       '@rollup/pluginutils': 5.1.0
       '@vitejs/plugin-legacy': 5.4.1(terser@5.31.1)(vite@5.3.1)
       '@vitejs/plugin-vue': 5.0.5(vite@5.3.1)(vue@3.4.30)
@@ -8370,7 +8370,7 @@ packages:
     hasBin: true
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.11.3
+      acorn: 8.12.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
@@ -8688,7 +8688,7 @@ packages:
   /unplugin@1.7.1:
     resolution: {integrity: sha512-JqzORDAPxxs8ErLV4x+LL7bk5pk3YlcWqpSNsIkAZj972KzFZLClc/ekppahKkOczGkwIG6ElFgdOgOlK4tXZw==}
     dependencies:
-      acorn: 8.11.3
+      acorn: 8.12.0
       chokidar: 3.6.0
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.6.2
