@@ -18,8 +18,8 @@ dependencies:
     specifier: 3.0.0-alpha-4020220240624001
     version: 3.0.0-alpha-4020220240624001(postcss@8.4.38)(vite@5.3.1)(vue@3.4.30)
   '@dcloudio/uni-components':
-    specifier: 3.0.0-3090920231225001
-    version: 3.0.0-3090920231225001(postcss@8.4.38)(vue@3.4.30)
+    specifier: 3.0.0-alpha-3000020210521001
+    version: 3.0.0-alpha-3000020210521001
   '@dcloudio/uni-h5':
     specifier: 3.0.0-3090920231225001
     version: 3.0.0-3090920231225001(postcss@8.4.38)(vue@3.4.30)
@@ -1793,21 +1793,6 @@ packages:
     dev: false
 
 
-  /@dcloudio/uni-cloud@3.0.0-3090920231225001(postcss@8.4.38)(vue@3.4.30):
-    resolution: {integrity: sha512-+k8cnrQZlBYbY01Li9rR5PBcxxvn/i8sHpj+i3rbzJioks4nneR64ZP14Zisu07v5VwLcjuZNdI8Ato7KZjyUA==}
-    dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-3090920231225001(postcss@8.4.38)(vue@3.4.30)
-      '@dcloudio/uni-i18n': 3.0.0-3090920231225001
-      '@dcloudio/uni-shared': 3.0.0-3090920231225001
-      '@vue/shared': 3.2.47
-      fast-glob: 3.3.2
-    transitivePeerDependencies:
-      - postcss
-      - supports-color
-      - ts-node
-      - vue
-    dev: false
-
   /@dcloudio/uni-cloud@3.0.0-alpha-4020220240624001(postcss@8.4.38)(vue@3.4.30):
     resolution: {integrity: sha512-U0dLmHxCZljUzwwotHV9wXDUHfl2Acp6+K24gU9m8/PjvCBMVNj1dPSU4kiA799WynanwQAu0ltYWtgs17GXYA==}
     dependencies:
@@ -1826,17 +1811,8 @@ packages:
       - vue
     dev: false
 
-  /@dcloudio/uni-components@3.0.0-3090920231225001(postcss@8.4.38)(vue@3.4.30):
-    resolution: {integrity: sha512-fyqPOzmEjgfhwrElZH+yTBjqbCzefgZTkbZrgPaQkvXRT8sJpsTpcjF8wNPLo0dB+9XppkNAJDy+c9EkDJGeKQ==}
-    dependencies:
-      '@dcloudio/uni-cloud': 3.0.0-3090920231225001(postcss@8.4.38)(vue@3.4.30)
-      '@dcloudio/uni-h5': 3.0.0-3090920231225001(postcss@8.4.38)(vue@3.4.30)
-      '@dcloudio/uni-i18n': 3.0.0-3090920231225001
-    transitivePeerDependencies:
-      - postcss
-      - supports-color
-      - ts-node
-      - vue
+  /@dcloudio/uni-components@3.0.0-alpha-3000020210521001:
+    resolution: {integrity: sha512-FxCzOPgOqE5V9owpogIZc0UvvfSlrzL77YVoKFWXB6BRJwAzc2bEpzA0+vUA+2V+RajWN6HrK9/czKjsArTS1A==}
     dev: false
 
   /@dcloudio/uni-components@3.0.0-alpha-4020220240624001(postcss@8.4.38)(vue@3.4.30):
