@@ -21,5 +21,24 @@ export function useRouter() {
     })
   }
 
-  return { push, replace }
+  const goBack = (options: Partial<RouterCallback> = {}) => {
+    uni.navigateBack({
+      delta: 1,
+      ...options,
+    })
+  }
+
+  const reLaunch = (url: string, options: Partial<RouterCallback> = {}) => {
+    uni.reLaunch({
+      url,
+      ...options,
+    })
+  }
+
+  const switchTab = (url: string) =>
+    uni.switchTab({
+      url,
+    })
+
+  return { push, replace, goBack, switchTab, reLaunch }
 }

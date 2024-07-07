@@ -20,7 +20,7 @@
     "shims-uni.d.ts",
     "global.d.ts",
     "auto-imports.d.ts",
-    "page.config.ts",
+    "pages.config.ts",
     "vite.config.ts",
     "uno.config.ts",
     "uni-pages.d.ts",

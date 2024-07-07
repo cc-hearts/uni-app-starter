@@ -10,6 +10,7 @@ declare global {
     env: {
       NODE_ENV: string,
       UNI_MODES: string,
+      MODE_ENV: string,
     },
   }
 }
