@@ -71,7 +71,7 @@
     "@cc-heart/eslint-config": "^3.0.6",
     "@cc-heart/vite-plugin-uni-pages-to-enum": "^0.0.2",
     "@dcloudio/types": "^3.4.10",
-    "@dcloudio/uni-automator": "3.0.0-alpha-4020220240624001",
+    "@dcloudio/uni-automator": "3.0.0-alpha-4020520240808001",
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-4020220240624001",
     "@dcloudio/uni-stacktracey": "3.0.0-alpha-4020220240624001",
     "@dcloudio/uni-ui": "^1.5.6",
